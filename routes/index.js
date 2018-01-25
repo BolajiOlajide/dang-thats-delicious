@@ -1,15 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
+const homeController = require('../controllers/home.controller');
+
 // Do work here
-router.get('/', (req, res) => {
-  // res.send('Hey! It works!');
-  res.render('hello', {
-    name: 'Bolaji',
-    dog: 'Vue',
-    title: 'Welcome'
-  });
-});
+router.get('/', homeController.homePage);
 
 
 router.get('/reverse/:name', (req, res) => {
