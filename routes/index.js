@@ -6,7 +6,8 @@ router.get('/', (req, res) => {
   // res.send('Hey! It works!');
   res.render('hello', {
     name: 'Bolaji',
-    dog: 'Vue'
+    dog: 'Vue',
+    title: 'Welcome'
   });
 });
 
