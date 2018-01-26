@@ -4,7 +4,7 @@ const router = express.Router();
 const homeController = require('../controllers/home.controller');
 
 // Do work here
-router.get('/', homeController.myMiddleware, homeController.homePage);
+router.get('/', homeController.homePage);
 
 
 router.get('/reverse/:name', (req, res) => {

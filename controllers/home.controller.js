@@ -7,8 +7,3 @@ exports.homePage = (req, res) => {
     title: 'Welcome'
   });
 };
-
-exports.myMiddleware = (req, res, next) => {
-  req.name = 'Bolaji';
-  next()
-}
